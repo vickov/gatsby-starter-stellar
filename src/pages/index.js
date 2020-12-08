@@ -3,9 +3,12 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
 import pic01 from '../assets/images/pic01.jpg'
+import pic02 from '../assets/img/hero.jpg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
 import Nav from '../components/Nav'
+//import GoogleMap from '../components/GoogleMaps'
+import Maps from '../components/Maps'
 
 class Index extends React.Component {
   constructor(props) {
@@ -26,17 +29,95 @@ class Index extends React.Component {
   render() {
     return (
       <Layout>
-        <Helmet title="Gatsby Starter - Stellar" />
+        <Helmet title="Optimus Dental" >
 
+        </Helmet>
         <Header />
-
+           
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
         ></Waypoint>
         <Nav sticky={this.state.stickyNav} />
 
-        <div id="main">
+        
+      <section id="form" className="main">
+
+        <div class="hero-image">
+          <div class="hero-content">
+              <div class="container-fluid">
+                  <div class="hero-content-inner">
+                      <h1>Optimus Dental</h1>
+                      <p>Najbolje rješenje za Vaš osmijeh</p>
+                  </div>
+              </div>
+        </div>
+
+            <div class="container-fluid">
+                
+                <div class="col-sm-6 col-sm-offset-6 col-md-4 col-md-offset-8 form">
+                    <h3><svg class="icon icon-envelope-o"></svg>Zakažite termin</h3>
+                    <form action="https://getsimpleform.com/messages?form_api_token={{ site.api_token }}" method="post">
+                        <div class="form-field">
+                            <input name="name" type="text" placeholder="Name" required />
+                        </div>
+                        <div class="form-field">
+                            <input name="phone" type="tel" placeholder="Phone" required />
+                        </div>
+                        <div class="form-field">
+                            <input name="email" type="email" placeholder="Email" required />
+                        </div>
+                        <div class="form-field">
+                            <textarea name="comments" placeholder="Message" required></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-default" value="Send" />
+                    </form>
+                </div>
+
+            </div>
+         </div>
+      </section>
+
+
+      <section id="3 columns">
+      <div class="three-shade-col">
+    <div class="col-sm-4">
+        <svg class="icon icon-envelope-o"></svg>
+        <h3>Contact Us</h3>
+        <ul>
+          Email
+        </ul>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-clock-o"></svg>
+        <h3>Opening Hours</h3>
+        <table>
+            <tbody>
+                <tr>
+                    <td>Ponedjeljak – Petak</td>
+                    <td>887887</td>
+                </tr>
+                <tr>
+                    <td>Subota</td>
+                    <td>5353535</td>
+                </tr>
+                <tr>
+                    <td>Nedjelja</td>
+                    <td>7756757</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-sm-4">
+        <svg class="icon icon-map-marker"></svg>
+        <h3>Location</h3>
+            <p>
+                address
+            </p>
+    </div>
+    </div>
+</section>
+
           <section id="intro" className="main">
             <div className="spotlight">
               <div className="content">
@@ -182,8 +263,12 @@ class Index extends React.Component {
               </ul>
             </footer>
           </section>
-        </div>
-      </Layout>
+
+         <Maps />
+
+
+          
+    </Layout>
     )
   }
 }
