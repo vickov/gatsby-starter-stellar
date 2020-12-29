@@ -1,6 +1,6 @@
 import React from 'react'
 
-//import logo from '../assets/images/logo.svg';
+import logo from '../assets/img/logo-transparent.png';
 
 const Header = (props) => (
     <header id="header" className="alt">
@@ -12,19 +12,19 @@ const Header = (props) => (
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand scroll" href="#top"><img src="{{ site.logo_url }}" alt="{{ site.title }}" /></a>
+            <a class="navbar-brand scroll" href="#top"><img src={logo} alt="Optimus Dental" /></a>
         </div>
 
          {/*  Collect the nav links, forms, and other content for toggling */}
         <div class="collapse navbar-collapse scrollspy" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="scroll" href="#top">Home</a></li>
-                <li><a class="scroll" href="#about">About</a></li>
-                <li><a class="scroll" href="#treatments">Treatments</a></li>
-                <li><a class="scroll" href="#team">Team</a></li>
-                <li><a class="scroll" href="#testimonials">Testimonials</a></li>
-                <li><a class="scroll" href="#gallery">Gallery</a></li>
-                <li><a class="scroll" href="#location">Location</a></li>
+                <li><a class="scroll" href="#top">Početna</a></li>
+                <li><a class="scroll" href="#about">O nama</a></li>
+                <li><a class="scroll" href="#treatments">Usluge</a></li>
+                <li><a class="scroll" href="#team">Naš tim</a></li>
+                <li><a class="scroll" href="#testimonials">Naši pacijenti</a></li>
+                <li><a class="scroll" href="#gallery">Galerija</a></li>
+                <li><a class="scroll" href="#location">Lokacija</a></li>
             </ul>
         </div>
 
