@@ -3,6 +3,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Waypoint } from 'react-waypoint'
 import pic01 from '../assets/images/pic01.jpg'
+import heartsvg from '../assets/svg/heart-o.svg'
 import pic02 from '../assets/img/hero.jpg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
@@ -32,12 +33,12 @@ class Index extends React.Component {
         <Helmet title="Optimus Dental" >
         </Helmet>
         <Header />
-          {/* 
+
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
         ></Waypoint>
-        <Nav sticky={this.state.stickyNav} />*/}
+        <Nav sticky={this.state.stickyNav} />
 
         
           <section id="form" className="main">
@@ -82,43 +83,96 @@ class Index extends React.Component {
           <div class="three-shade-col">
             <div class="col-sm-4">
                 <svg class="icon icon-envelope-o"></svg>
-                <h3>Contact Us</h3>
+                <h3>Kontaktirajte nas</h3>
                 <ul>
                   Email
                 </ul>
             </div>
             <div class="col-sm-4">
                 <svg class="icon icon-clock-o"></svg>
-                <h3>Opening Hours</h3>
+                <h3>Radno vrijeme</h3>
                 <table>
                     <tbody>
                         <tr>
                             <td>Ponedjeljak – Petak</td>
-                            <td>887887</td>
+                            <td>12-20h</td>
                         </tr>
                         <tr>
                             <td>Subota</td>
-                            <td>5353535</td>
+                            <td>Ne radimo</td>
                         </tr>
                         <tr>
                             <td>Nedjelja</td>
-                            <td>7756757</td>
+                            <td>Ne radimo</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
             <div class="col-sm-4">
                 <svg class="icon icon-map-marker"></svg>
-                <h3>Location</h3>
+                <h3>Lokacija</h3>
                     <p>
-                        address
+                        Poljicka 28a, Split
                     </p>
             </div>
           </div>
       </section>
 
-      <section id="intro" className="main">
-        <div className="spotlight">
+
+      <section id="about">
+          <div id="about" class="about">
+            <div class="container-fluid">
+                <h2 class="section-title">O nama</h2>
+
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h3>Dobrodošli na stranice Optimus Dentala</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
+
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="boxed-icon"> <div class="icon icon-heart"> <img src={heartsvg}></img></div>
+                                  <svg class="icon icon-heart"><img src={heartsvg}></img></svg>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="boxed-icon">
+                                    <svg class="icon icon-medkit"></svg>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                            </div>
+                        </div>
+
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="boxed-icon">
+                                    <svg class="icon icon-star"></svg>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+
+      <section id="aboutxxxx">
+        <div id="aboutxxxxx" className="about">
           <div className="content">
             <header className="major">
               <h2>Ipsum sed adipiscing</h2>

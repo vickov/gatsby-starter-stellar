@@ -8,7 +8,7 @@ const Footer = props => (
 
 
         <section id="footer">
-            <div class="three-shade-col">
+            <div class="four-shade-col">
 
                 <div class="col-sm-4">
                 <img src={logo}
