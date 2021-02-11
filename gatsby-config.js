@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Starter - Stellar by HTML5 UP",
-    author: "Hunter Chang",
-    description: "A Gatsby.js Starter based on Stellar by HTML5 UP",
+    title: "Optimus Dental site",
+    author: "Vicko Vitasovic",
+    description: "Optimus dental webpages",
     other: 
     { googleMapsKey: "AIzaSyBbFgCgwOGf1cK5YACwl4WkNTfsblnHUwo" }
   },
@@ -17,7 +17,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
+        icon: 'src/assets/images/favicon.png', // This path is relative to the root of the site.
       },
     },
     'gatsby-plugin-sass',

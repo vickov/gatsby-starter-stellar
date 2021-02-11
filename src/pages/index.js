@@ -1,13 +1,17 @@
 import { Link } from 'gatsby'
 import React from 'react'
 import Helmet from 'react-helmet'
-import { Waypoint } from 'react-waypoint'
+//import { Waypoint } from 'react-waypoint'
 import pic01 from '../assets/images/pic01.jpg'
 import heartsvg from '../assets/svg/heart-o.svg'
-import pic02 from '../assets/img/hero.jpg'
+import gl1 from '../assets/img/gallery/thumb/gl1.jpg'
+import gl2 from '../assets/img/gallery/thumb/gl2.jpg'
+import tm1 from '../assets/img/team/team1.jpg'
+import tm2 from '../assets/img/team/team2.jpg'
+//import pic02 from '../assets/img/hero.jpg'
 import Header from '../components/Header'
 import Layout from '../components/layout'
-import Nav from '../components/Nav'
+//import Nav from '../components/Nav'
 //import GoogleMap from '../components/GoogleMaps'
 import Maps from '../components/Maps'
 
@@ -18,7 +22,7 @@ class Index extends React.Component {
       stickyNav: false,
     }
   }
-
+/*
   _handleWaypointEnter = () => {
     this.setState(() => ({ stickyNav: false }))
   }
@@ -26,20 +30,20 @@ class Index extends React.Component {
   _handleWaypointLeave = () => {
     this.setState(() => ({ stickyNav: true }))
   }
-
+*/
   render() {
     return (
       <Layout>
         <Helmet title="Optimus Dental" >
         </Helmet>
         <Header />
-
+{/*
         <Waypoint
           onEnter={this._handleWaypointEnter}
           onLeave={this._handleWaypointLeave}
         ></Waypoint>
         <Nav sticky={this.state.stickyNav} />
-
+ */}
         
           <section id="form" className="main">
 
@@ -117,209 +121,204 @@ class Index extends React.Component {
             </div>
           </div>
       </section>
-
-
-      <section id="about">
-          <div id="about" class="about">
-            <div class="container-fluid">
-                <h2 class="section-title">O nama</h2>
-
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h3>Dobrodošli na stranice Optimus Dentala</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis nostrum ab vero temporibus magnam, delectus!</p>
-
-                        <div class="media">
-                            <div class="media-left">
-                                <div class="boxed-icon"> <div class="icon icon-heart"> <img src={heartsvg}></img></div>
-                                  <svg class="icon icon-heart"><img src={heartsvg}></img></svg>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="media">
-                            <div class="media-left">
-                                <div class="boxed-icon">
-                                    <svg class="icon icon-medkit"></svg>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                            </div>
-                        </div>
-
-                        <div class="media">
-                            <div class="media-left">
-                                <div class="boxed-icon">
-                                    <svg class="icon icon-star"></svg>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam explicabo unde doloremque quo, fugit, nisi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-
-
-
-      <section id="aboutxxxx">
-        <div id="aboutxxxxx" className="about">
-          <div className="content">
-            <header className="major">
-              <h2>Ipsum sed adipiscing</h2>
-            </header>
-            <p>
-              Sed lorem ipsum dolor sit amet nullam consequat feugiat
-              consequat magna adipiscing magna etiam amet veroeros. Lorem
-              ipsum dolor tempus sit cursus. Tempus nisl et nullam lorem
-              ipsum dolor sit amet aliquam.
-            </p>
-            <ul className="actions">
-              <li>
-                <Link to="/generic" className="button">
-                  Learn More
-                </Link>
-              </li>
-            </ul>
-          </div>
-          <span className="image">
-            <img src={pic01} alt="" />
-          </span>
-        </div>
-      </section>
-
-      <section id="first" className="main special">
-        <header className="major">
-          <h2>Magna veroeros</h2>
-        </header>
-        <ul className="features">
-          <li>
-            <span className="icon major style1 fa-code"></span>
-            <h3>Ipsum consequat</h3>
-            <p>
-              Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-              consequat tempus veroeros sed consequat.
-            </p>
-          </li>
-          <li>
-            <span className="icon major style3 fa-copy"></span>
-            <h3>Amed sed feugiat</h3>
-            <p>
-              Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-              consequat tempus veroeros sed consequat.
-            </p>
-          </li>
-          <li>
-            <span className="icon major style5 fa-diamond"></span>
-            <h3>Dolor nullam</h3>
-            <p>
-              Sed lorem amet ipsum dolor et amet nullam consequat a feugiat
-              consequat tempus veroeros sed consequat.
-            </p>
-          </li>
-        </ul>
-        <footer className="major">
-          <ul className="actions">
-            <li>
-              <Link to="/generic" className="button">
-                Learn More
-              </Link>
-            </li>
-          </ul>
-        </footer>
-      </section>
-
-      <section id="second" className="main special">
-        <header className="major">
-          <h2>Ipsum consequat</h2>
-          <p>
-            Donec imperdiet consequat consequat. Suspendisse feugiat congue
-            <br />
-            posuere. Nulla massa urna, fermentum eget quam aliquet.
-          </p>
-        </header>
-        <ul className="statistics">
-          <li className="style1">
-            <span className="icon fa-code-fork"></span>
-            <strong>5,120</strong> Etiam
-          </li>
-          <li className="style2">
-            <span className="icon fa-folder-open-o"></span>
-            <strong>8,192</strong> Magna
-          </li>
-          <li className="style3">
-            <span className="icon fa-signal"></span>
-            <strong>2,048</strong> Tempus
-          </li>
-          <li className="style4">
-            <span className="icon fa-laptop"></span>
-            <strong>4,096</strong> Aliquam
-          </li>
-          <li className="style5">
-            <span className="icon fa-diamond"></span>
-            <strong>1,024</strong> Nullam
-          </li>
-        </ul>
-        <p className="content">
-          Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl
-          eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum
-          ac arcu sit amet, fermentum pellentesque et purus. Integer maximus
-          varius lorem, sed convallis diam accumsan sed. Etiam porttitor
-          placerat sapien, sed eleifend a enim pulvinar faucibus semper quis
-          ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer
-          eget purus nec nulla mattis et accumsan ut magna libero. Morbi
-          auctor iaculis porttitor. Sed ut magna ac risus et hendrerit
-          scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras
-          eu ornare dui curabitur lacinia.
-        </p>
-        <footer className="major">
-          <ul className="actions">
-            <li>
-              <Link to="/generic" className="button">
-                Learn More
-              </Link>
-            </li>
-          </ul>
-        </footer>
-      </section>
       
+      <section id="treatments">
+
+      <div id="treatments" class="treatments">
+    <div class="container-fluid">
+        <h2 class="section-title">Treatments</h2>
+
+        <div class="row">
+            
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        
+                        <h4>Invisible braces</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
+                    </div>
+                </div>
+            
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        <h4>Cosmetic Dentistry</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
+                    </div>
+                </div>
+            
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        <h4>Stain removal</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    </div>
+                </div>
+            
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        <h4>Dentures</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
+                    </div>
+                </div>
+            
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        <h4>Emergency Calls</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
+                    </div>
+                </div>
+            
+                <div class="col-sm-6 col-md-4">
+                    <div class="icon-box">
+                        <h4>Sedation</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam minima, itaque molestiae ut ratione unde?</p>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
+</section>
+
+      <section id="team">
+  <div id="team" class="team"> 
+    <h2 class="section-title">Naš tim</h2> 
+    <div id="team-carousel" class="owl-carousel owl-theme">
+       <div class="owl-wrapper-outer">
+          <div class="owl-wrapper">
+          <div class="owl-item"><div class="expandable-box">
+            <div class="expandable-box-top">
+                <img src={tm1} alt="Britta Perry"/>
+                <h4>Britta Perry</h4>
+            </div>
+            <div class="expandable-box-bottom">
+                <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="email@gmail.com"></span>
+                <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9659 43 21"></span>
+            </div>
+        </div>
+       </div>
+      <div class="owl-item">
+        <div class="expandable-box">
+            <div class="expandable-box-top">
+                <img src="/dentistsmile/img/team2.jpg" alt="Troy Barnes"/>
+                <h4>Troy Barnes</h4>
+            </div>
+            <div class="expandable-box-bottom">
+                <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="email@gmail.com"></span>
+                <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9659 43 21"></span>
+            </div>
+        </div>
+      </div>
+      <div class="owl-item">
+        <div class="expandable-box">
+           <div class="expandable-box-top">
+               <img src="/dentistsmile/img/team1.jpg" alt="Annie"/>
+               <h4>Annie</h4>
+           </div>
+           <div class="expandable-box-bottom">
+               <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="email@gmail.com"></span>
+               <span data-toggle="tooltip" data-placement="bottom" title="" data-original-title="9659 43 21"></span>
+           </div>
+        </div>
+      </div>
+      
+      </div>
+      </div>
+      </div>
+      </div>
+        
+      </section>
+        
+    
+        
+    
+        
+    
+
+      <div id="gallery" class="gallery">
+        
+        <h2 class="section-title">Galerija</h2>
+    
+        
+            <a href="assets/img/gallery/large/gl1.jpg" class="gallery-item expandable-box image-link">
+                <div class="expandable-box-top">
+                    <img src={gl1} alt="something meaningful" />
+                </div>
+                <div class="expandable-box-bottom">
+                    <span><img src={heartsvg}></img></span>
+                </div>
+            </a>
+        
+            <a href="assets/img/gallery/large/gl2.jpg" class="gallery-item expandable-box image-link">
+                <div class="expandable-box-top">
+                    <img src={"assets/img/gallery/thumb/gl2.jpg"} alt="something meaningful" />
+                </div>
+                <div class="expandable-box-bottom">
+                    <span><img src={heartsvg}></img></span>
+                </div>
+            </a>
+        
+            <a href="assets/img/gallery/large/gl3.jpg" class="gallery-item expandable-box image-link">
+                <div class="expandable-box-top">
+                    <img src="assets/img/gallery/thumb/gl3.jpg" alt="something meaningful" />
+                </div>
+                <div class="expandable-box-bottom">
+                    <span><img src={heartsvg}></img></span>
+                </div>
+            </a>
+        
+            <a href="assets/img/gallery/large/gl4.jpg" class="gallery-item expandable-box image-link">
+                <div class="expandable-box-top">
+                    <img src={require('../assets/img/gallery/thumb/gl4.jpg')} alt="something meaningful" />
+                </div>
+                <div class="expandable-box-bottom">
+                    <span><img src={heartsvg}></img></span>
+                </div>
+            </a>
+        
+            <a href="assets/img/gallery/large/gl5.jpg" class="gallery-item expandable-box image-link">
+                <div class="expandable-box-top">
+                    <img src="assets/img/gallery/thumb/gl5.jpg" alt="something meaningful" />
+                </div>
+                <div class="expandable-box-bottom">
+                    <span><img src={heartsvg}></img></span>
+                </div>
+            </a>
+        
+            <a href="assets/img/gallery/large/gl1.jpg" class="gallery-item expandable-box image-link">
+                <div class="expandable-box-top">
+                    <img src="assets/img/gallery/thumb/gl1.jpg" alt="something meaningful" />
+                </div>
+                <div class="expandable-box-bottom">
+                    <span><img src={heartsvg}></img></span>
+                </div>
+            </a>
+        
+            <a href="assets/img/gallery/large/gl2.jpg" class="gallery-item expandable-box image-link">
+                <div class="expandable-box-top">
+                    <img src="assets/img/gallery/thumb/gl2.jpg" alt="something meaningful" />
+                </div>
+                <div class="expandable-box-bottom">
+                    <span><img src={heartsvg}></img></span>
+                </div>  
+            </a>
+        
+            <a href="assets/img/gallery/large/gl3.jpg" class="gallery-item expandable-box image-link">
+                <div class="expandable-box-top">
+                    <img src="assets/img/gallery/thumb/gl3.jpg" alt="something meaningful" />
+                </div>
+                <div class="expandable-box-bottom">
+                    <span><img src={heartsvg}></img></span>
+                </div>
+            </a>
+        
+    
+    </div>
+
+
       <section id="map" className="main special">
         <Maps />
       </section>
       
-      <section id="cta" className="main special">
-        <header className="major">
-          <h2>Congue imperdiet</h2>
-          <p>
-            Donec imperdiet consequat consequat. Suspendisse feugiat congue
-            <br />
-            posuere. Nulla massa urna, fermentum eget quam aliquet.
-          </p>
-        </header>
-        <footer className="major">
-          <ul className="actions">
-            <li>
-              <Link to="/generic" className="button special">
-                Get Started
-              </Link>
-            </li>
-            <li>
-              <Link to="/generic" className="button">
-                Learn More
-              </Link>
-            </li>
-          </ul>
-        </footer>
-      </section>
+    
 
       
 </Layout>
